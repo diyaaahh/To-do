@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require("cors");
-
+require('dotenv').config();
 
 const app = express();
 
@@ -69,4 +69,4 @@ app.put('/todo/update/:id', async (req, res) => {
 });
 
 
-app.listen(3001, () => console.log("Server strated on port 3001!"));
+app.listen(3001, () => console.log("Server strated on port 3001! on  "));
